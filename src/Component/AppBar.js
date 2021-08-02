@@ -8,7 +8,7 @@ const AppBar = () => {
 
   return (
     <Appbar.Header theme={{colors: {primary: '#3C3C3C'}}}>
-      <Appbar.Action icon="menu" onPress={_goBack} />
+      <Appbar.Action icon="menu" />
       <Image
         style={styles.logo}
         source={require('../assest/Webp.net-resizeimage.png')}

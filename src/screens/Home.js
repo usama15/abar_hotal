@@ -27,13 +27,13 @@ function Home(props) {
         <ImageBackground
           source={require('../assest/back.jpg')}
           resizeMode="cover"
-          style={{width: null, height: null,}}>
+          style={{width: null, height: null}}>
           <View style={[styles.container]}>
             <AppBar />
-            <View style={[styles.slid,{aspectRatio:1,}]}>
+            <View style={[styles.slid, {aspectRatio: 1}]}>
               <Silder />
             </View>
-            <View style={[styles.main_btn,]}>
+            <View style={[styles.main_btn]}>
               <Button
                 style={styles.btn}
                 mode="contained"
@@ -47,7 +47,7 @@ function Home(props) {
                 style={[styles.btn1]}
                 mode="contained"
                 icon="map-marker"
-                onPress={() => console.log('press')}>
+                onPress={() => navigation.navigate('Location')}>
                 Location
               </Button>
             </View>
@@ -89,7 +89,7 @@ function Home(props) {
                 <View style={styles.tab}>
                   <Image
                     style={styles.img}
-                    source={require('../assest/single.jpeg')}
+                    source={require('../assest/stay.jpeg')}
                   />
                   <Text style={styles.text1}>Staycation </Text>
                   <Text style={styles.text1}>Offers</Text>
@@ -110,7 +110,7 @@ function Home(props) {
                   <Text style={styles.text1}>& RESTAURENT</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => navigation.navigate('About')}>
                 <View style={styles.tab1}>
                   <Image
                     style={styles.img}
@@ -171,7 +171,7 @@ function Home(props) {
                 <Avatar.Icon size={32} icon="youtube" style={styles.social} />
               </TouchableOpacity>
             </View>
-            <Text style={[styles.foo,]}>
+            <Text style={[styles.foo]}>
               2021 ABAR HOTEL APARTMENT LLC. ALL RIGHT RESERED
             </Text>
           </View>
@@ -216,7 +216,7 @@ const styles = ScaledSheet.create({
   main_btn: {
     flex: 1,
     flexDirection: 'row',
-    marginTop:'-15%',
+    marginTop: '-15%',
     // position: 'relative',
   },
   btn_group: {
@@ -243,14 +243,14 @@ const styles = ScaledSheet.create({
     height: 100,
     borderRadius: 10,
     backgroundColor: 'whitesmoke',
-    marginTop: '7%',
+    marginTop: '8%',
   },
   tab1: {
     width: 90,
     height: 100,
     borderRadius: 10,
     backgroundColor: 'whitesmoke',
-    marginTop: '5%',
+    marginTop: '8%',
   },
   text1: {
     textAlign: 'center',
@@ -264,7 +264,7 @@ const styles = ScaledSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '40%',
-    marginTop: '3%',
+    marginTop: '7%',
     marginLeft: '30%',
     marginBottom: '5%',
   },

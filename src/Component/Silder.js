@@ -23,6 +23,12 @@ const Silder = () => (
       <View style={[styles.child]}>
         <Image style={styles.img} source={require('../assest/slide6.jpeg')} />
       </View>
+      <View style={[styles.child]}>
+        <Image
+          style={styles.img}
+          source={require('../assest/staycation.jpeg')}
+        />
+      </View>
     </SwiperFlatList>
   </View>
 );

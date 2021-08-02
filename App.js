@@ -32,7 +32,9 @@ import SingleBedRoom from './src/screens/SingleBedRoom';
 import DoubleBedRoom from './src/screens/DoubleBedRoom';
 import Studio from './src/screens/Studio';
 import Staycation from './src/screens/Staycation';
-import Home from "./src/screens/Home";
+import Home from './src/screens/Home';
+import Location from './src/Component/Location';
+import About from './src/screens/About';
 
 const App: () => Node = () => {
   const Stack = createStackNavigator();
@@ -67,6 +69,16 @@ const App: () => Node = () => {
         <Stack.Screen
           name="Home"
           component={Home}
+          options={{headerMode: 'none', headerShown: false}}
+        />
+        <Stack.Screen
+          name="Location"
+          component={Location}
+          options={{headerMode: 'none', headerShown: false}}
+        />
+        <Stack.Screen
+          name="About"
+          component={About}
           options={{headerMode: 'none', headerShown: false}}
         />
       </Stack.Navigator>

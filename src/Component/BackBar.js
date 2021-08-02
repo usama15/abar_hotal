@@ -5,7 +5,6 @@ import ScaledSheet from 'react-native-scaled-sheet';
 import {useNavigation} from '@react-navigation/native';
 
 const BackBar = () => {
-  const _goBack = () => console.log('Went back');
   const navigation = useNavigation();
 
   return (
