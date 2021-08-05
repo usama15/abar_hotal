@@ -20,7 +20,7 @@ function SingleBedRoom(props) {
           style={styles.container}
           source={require('../assest/back.jpg')}>
           <View style={styles.main}>
-            <YoutubePlayer height={200} play={true} videoId={'CfK49ArZRew'} />
+            <YoutubePlayer height={300} play={true} videoId={'CfK49ArZRew'} />
           </View>
         </ImageBackground>
       </ScrollView>

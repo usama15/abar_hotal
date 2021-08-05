@@ -98,9 +98,7 @@ function Home(props) {
             </View>
             <View style={styles.btn_group1}>
               <TouchableOpacity
-                onPress={() => {
-                  Linking.openURL('https://gulcafe.com/');
-                }}>
+                onPress={() => navigation.navigate('GulCafe')}>
                 <View style={styles.tab1}>
                   <Image
                     style={styles.img}
@@ -120,7 +118,7 @@ function Home(props) {
                   <Text style={styles.text1}>ABAR HOTEL</Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity  onPress={() => navigation.navigate('Other')}>
                 <View style={styles.tab1}>
                   <Image
                     style={styles.img}
@@ -131,9 +129,7 @@ function Home(props) {
                 </View>
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={() => {
-                  Linking.openURL('https://abarhotels.com/contact-us/');
-                }}>
+                onPress={() => navigation.navigate('ContactUs')}>
                 <View style={styles.tab1}>
                   <Image
                     style={styles.img}

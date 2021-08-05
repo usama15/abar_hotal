@@ -35,6 +35,9 @@ import Staycation from './src/screens/Staycation';
 import Home from './src/screens/Home';
 import Location from './src/Component/Location';
 import About from './src/screens/About';
+import ContactUs from './src/screens/ContactUs';
+import GulCafe from './src/screens/GulCafe';
+import OtherAmenites from './src/screens/OtherAmenites';
 
 const App: () => Node = () => {
   const Stack = createStackNavigator();
@@ -79,6 +82,21 @@ const App: () => Node = () => {
         <Stack.Screen
           name="About"
           component={About}
+          options={{headerMode: 'none', headerShown: false}}
+        />
+        <Stack.Screen
+          name="ContactUs"
+          component={ContactUs}
+          options={{headerMode: 'none', headerShown: false}}
+        />
+        <Stack.Screen
+          name="GulCafe"
+          component={GulCafe}
+          options={{headerMode: 'none', headerShown: false}}
+        />
+        <Stack.Screen
+          name="Other"
+          component={OtherAmenites}
           options={{headerMode: 'none', headerShown: false}}
         />
       </Stack.Navigator>

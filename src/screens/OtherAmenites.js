@@ -11,7 +11,7 @@ import {
 import YoutubePlayer from 'react-native-youtube-iframe';
 import BackBar from '../Component/BackBar';
 
-function DoubleBedRoom(props) {
+function OtherAmenites(props) {
   return (
     <SafeAreaView>
       <ScrollView>
@@ -20,7 +20,7 @@ function DoubleBedRoom(props) {
           style={styles.container}
           source={require('../assest/back.jpg')}>
           <View style={styles.main}>
-            <YoutubePlayer height={300} play={true} videoId={'Qrt3A4z0ylM'} />
+            <YoutubePlayer height={300} play={true} videoId={'fWiUKsa8rx8'} />
           </View>
         </ImageBackground>
       </ScrollView>
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DoubleBedRoom;
+export default OtherAmenites;
