@@ -45,11 +45,10 @@ function ContactUs(props) {
               mode="contained"
               icon="email"
               onPress={() => {
-                Linking.openURL('mailto:info@abarhotals.com');
+                Linking.openURL('mailto:reservation@abarhotel.com');
               }}
-              // onPress={launchMailApp}
             >
-              info@abarhotals.com
+              reservation@abarhotel.com
             </Button>
             <TouchableOpacity
               style={styles.area}
